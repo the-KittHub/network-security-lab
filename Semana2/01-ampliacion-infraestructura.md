@@ -13,7 +13,7 @@ La ampliación busca acercarse más a una infraestructura empresarial más compl
 
 La siguiente comparación muestra el cambio entre la infraestructura inicial y la topología ampliada de esta segunda etapa.
 
-<img src="imagenes/ 02-comparacion-topologias.png " alt="comaparacion" width="80%">
+<img src="imagenes/comparacion-topologias.png " alt="comaparacion" width="80%">
 
 La ampliación permite separar de forma más clara los diferentes tipos de dispositivos y deja preparados los segmentos que se utilizarán en las siguientes implementaciones.
 
