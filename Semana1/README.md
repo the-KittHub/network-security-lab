@@ -51,7 +51,7 @@ Despliegue de un servidor Ubuntu Server, configuración del servicio ISC DHCP Se
 
 --- 
 
-## Resultado de la semana Al finalizar esta etapa el laboratorio cuenta con: 
+## Resultado de la semana 
 - ✅ Topología completamente implementada en GNS3. 
 - ✅ Red segmentada mediante VLANs. 
 - ✅ Enrutamiento Inter-VLAN operativo. 
