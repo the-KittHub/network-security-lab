@@ -1,4 +1,4 @@
-# 01 - Ampliación de infraestructura
+# Ampliación de infraestructura
 
 ##  📌Objetivo
 
@@ -13,7 +13,7 @@ La ampliación busca acercarse más a una infraestructura empresarial más compl
 
 La siguiente comparación muestra el cambio entre la infraestructura inicial y la topología ampliada de esta segunda etapa.
 
-<img src="imagenes/comparacion-topologias.png " alt="comaparacion" width="80%">
+<img src="images/02_comparacion-topologias.png" alt="02_comparacion-topologias" width="80%">
 
 La ampliación permite separar de forma más clara los diferentes tipos de dispositivos y deja preparados los segmentos que se utilizarán en las siguientes implementaciones.
 
@@ -32,13 +32,13 @@ Las VLANs utilizadas continúan siendo:
 | 50   | SERVERS    | Servidores de infraestructura y seguridad          |
 | 99   | MANAGEMENT | Administración de dispositivos de red              |
 
-Durante esta ampliación se incorporaron:
+📋 Durante esta ampliación se incorporaron:
 
-* nuevos endpoints en el segmento de Administración;
-* un Access Point junto con notebook y smartphone para representar la red Guest;
-* 1 servidor de seguridad dentro de la VLAN 50;
-* el segmento Management;
-* configuración en`R2-ISP` para ser utilizado como router externo y simular la salida de la red hacia un ISP.
+- ✔️ nuevos endpoints en el segmento de Administración;
+- ✔️ un Access Point junto con notebook y smartphone para representar la red Guest;
+- ✔️ 1 servidor de seguridad dentro de la VLAN 50;
+- ✔️ el segmento Management;
+- ✔️ configuración en`R2-ISP` para ser utilizado como router externo y simular la salida de la red hacia un ISP.
 
 El enlace entre `R1-EDGE` y `SW1-CORE` continúa funcionando como trunk 802.1Q para transportar las VLANs internas del laboratorio.
 
@@ -76,7 +76,7 @@ y:
 show interfaces trunk
 ```
 
-De esta forma se comprobó que cada switch mantuviera activa su VLAN correspondiente y que la VLAN 99 pudiera atravesar los enlaces trunk necesarios.
+Para comprobar que cada switch mantuviera activa su VLAN correspondiente y que la VLAN 99 pudiera atravesar los enlaces trunk necesarios.
 
 ---
 ## 🏁Resultado
