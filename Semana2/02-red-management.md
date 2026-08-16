@@ -62,8 +62,7 @@ Como los switches funcionan como dispositivos de Capa 2, se configuró `R1-EDGE`
 ```cisco
 ip default-gateway 192.168.99.1
 ```
-<img src="images/03_config-ip-management.png" alt="03_config-ip-management" width="80%">
-
+<img src="images/03_config-ip-management.png" alt="03_config-ip-management" width="60%">
 
 El mismo esquema se replicó en el resto de los switches utilizando la dirección correspondiente a cada dispositivo.
 
@@ -137,7 +136,7 @@ SW3-IT
 
 Esta prueba permite comprobar que la red de Management no solamente funciona dentro de su propio segmento, sino que también puede ser alcanzada a través del enrutamiento definido en `R1-EDGE`.
 
-<img src="images/04_ping-ip-management.gif" alt="04_ping-ip-management" width="80%">
+<img src="./images/04_ping-ip-management.gif" alt="04_ping-ip" width="80%">
 
 ---
 ## 🏁Resultado
