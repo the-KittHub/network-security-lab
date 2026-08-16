@@ -42,7 +42,7 @@ Se amplió la topología inicial del laboratorio para incorporar los componentes
 
 ---
 
-### 02 - Red de Management
+### Red de Management
 
 Se implementó la **VLAN 99** como red dedicada para la administración de los dispositivos de infraestructura.
 
@@ -52,7 +52,7 @@ Se asignaron direcciones IP de Management al router y a los switches, habilitand
 
 ---
 
-### 03 - DNS interno
+### DNS interno
 
 Se incorporó resolución DNS interna utilizando el dominio:
 
@@ -72,11 +72,11 @@ r1-edge.kit.enterprise.lab
 
 en lugar de depender únicamente de sus direcciones IP.
 
-> 📄 [Ver documentación](./03-dns-interno.md)
+> 📄 [Ver documentación](./03-DNS-interno.md)
 
 ---
 
-### 04 - NAT/PAT
+### NAT/PAT
 
 Se configuró `R1-EDGE` como límite entre las redes privadas del laboratorio y una red externa simulada mediante `R2-ISP`.
 
