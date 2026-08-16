@@ -136,7 +136,7 @@ SW3-IT
 
 Esta prueba permite comprobar que la red de Management no solamente funciona dentro de su propio segmento, sino que también puede ser alcanzada a través del enrutamiento definido en `R1-EDGE`.
 
-<img src="./images/04_ping-ip-management.gif" alt="04_ping-ip" width="80%">
+<img src="./images/04_ping-ip- management.gif" alt="04_ping-ip" width="60%">
 
 ---
 ## 🏁Resultado
