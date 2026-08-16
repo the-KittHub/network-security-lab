@@ -92,7 +92,8 @@ Confirmando que el registro se encuentra disponible en el DNS interno.
 Para validar el funcionamiento desde un cliente real de la red, se utilizó PC-Admin que está ubicada en una VLAN distinta a la de Servidores y Management.
 
 El cliente recibió su ip, gateway, y domain name automáticamente por DHCP:
-<img src="images/05_prueba-dns-pc.png" alt="prueba-dns" width="80%">
+
+<img src="images/05_prueba-dns-pc.png" alt="prueba-dns" width="45%">
 
 Luego se utilizó directamente el FQDN del switch:
 
@@ -106,7 +107,7 @@ El cliente pudo resolver dns y comunicarse
 sw5-it.kit.enterprise.lab → 192.168.99.4
 ```
 
-<img src="./images/07_ping-pc-sw5.gif" alt="ping-pc-sw5" width="50%"> <img src="./images/06_pc-sw5.png" alt="pc-sw5" width="60%">
+ <img src="./images/06_pc-sw5.png" alt="pc-sw5" width="40%"> <img src="./images/07_ping-pc-sw5.gif" alt="ping-pc-sw5" width="47%">
 
 Esta prueba permite validar en una misma operación la entrega del servidor DNS mediante DHCP, la resolución del nombre interno y la comunicación con el destino utilizando su FQDN.
 
