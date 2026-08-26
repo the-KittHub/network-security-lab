@@ -149,4 +149,4 @@ Esta implementación también deja preparada la infraestructura para las siguien
 
   ## ⏩Próximos pasos 
 
-  En la siguiente etapa se implementará DNS. [Ir a la siguiente sección](03-DNS-interno.md)
+  En la siguiente etapa se implementará DNS. [Ir a la siguiente sección](07-DNS-interno.md)
