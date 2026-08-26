@@ -127,4 +127,4 @@ Esto simplifica la identificación y administración de los recursos del laborat
 
  ## ⏩Próximos pasos 
 
-  En la siguiente etapa se implementará NAT. [Ir a la siguiente sección](04-NAT.md)
+  En la siguiente etapa se implementará NAT. [Ir a la siguiente sección](08-NAT.md)
