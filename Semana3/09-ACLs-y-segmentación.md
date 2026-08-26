@@ -55,7 +55,7 @@ interface GigabitEthernet0/0.30
 ```
 
 Al tratarse de una ACL extendida, se ubicó cerca del origen del tráfico que se desea controlar.
-<img src="images/ config-ACL-guest-in.png " alt=" config-ACL-guest-in" width="80%">
+<img src="images/01-config-ACL-guest-in.png " alt="01-config-ACL-guest-in" width="60%">
 
 ---
 
@@ -74,7 +74,7 @@ PC-Guest> ping 192.168.20.164
 
 🚫 `Communication administratively prohibited` indica que el tráfico fue rechazado por una política administrativa aplicada en el router y no por una falla de conectividad del destino.
 
-<img src="images/ config-ip-management.png " alt=" config-ip-management" width="80%">
+<img src="images/02-ping-desde-vlan-guest.png " alt="02-ping-desde-vlan-guest" width="60%">
 
 La evaluación de la ACL confirmó además que las reglas de denegación registraron coincidencias:
 
@@ -84,7 +84,7 @@ R1-EDGE# show ip access-lists GUEST-IN
 
 Los contadores de las ACE permitieron comprobar que el tráfico generado durante las pruebas estaba siendo procesado por las reglas correspondientes.
 
-<img src="images/ comparación-acl.png " alt=" comparación-acl" width="50%"> <img src="images/ comparación-acl2.png " alt=" comparación-acl2" width="50%">
+<img src="images/03-comparación-acl.png " alt="03-comparación-acl" width="45%"> <img src="images/03-comparación-acl2.png " alt="03-comparación-acl2" width="50%">
 
 ---
 
@@ -105,11 +105,11 @@ La implementación de GUEST-IN permitió aplicar una política de acceso especí
 
 Como resultado:
 
-✅ Los clientes Guest continúan obteniendo configuración mediante DHCP.
-✅ La resolución DNS hacia el servidor interno permanece disponible.
-✅ El acceso hacia las VLAN de Administración, IT, Servers y Management queda restringido.
-✅ El acceso a la VLAN de servidores se limita únicamente al servicio DNS requerido.
-✅ Los contadores de la ACL permiten verificar las coincidencias generadas durante las pruebas.
+* ✅ Los clientes Guest continúan obteniendo configuración mediante DHCP.
+* ✅ La resolución DNS hacia el servidor interno permanece disponible.
+* ✅ El acceso hacia las VLAN de Administración, IT, Servers y Management queda restringido.
+* ✅ El acceso a la VLAN de servidores se limita únicamente al servicio DNS requerido.
+* ✅ Los contadores de la ACL permiten verificar las coincidencias generadas durante las pruebas.
 
 ## ⏩Próximos pasos 
 
