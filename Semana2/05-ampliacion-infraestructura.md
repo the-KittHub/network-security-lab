@@ -94,4 +94,4 @@ Con esta ampliación queda definida la base física y lógica sobre la que se de
 
 ## ⏩Próximos pasos 
 
-En la siguiente etapa se implementará VLAN 99. [Ir a la siguiente sección](02-red-management.md)
+En la siguiente etapa se implementará VLAN 99. [Ir a la siguiente sección](06-red-management.md)
