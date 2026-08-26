@@ -53,8 +53,7 @@ line vty 0 4
  login local
  transport input ssh
 ```
-imagen configuración de ssh (05)
-                    <img src="images/05-config-ssh-en- r1.png " alt=" 05-config-ssh-en- r1" width="60%"> 
+<img src="images/05-config-ssh-en- r1.png " alt=" 05-config-ssh-en- r1" width="60%"> 
 
 De esta forma, Telnet queda deshabilitado como método de administración remota.
 
@@ -102,8 +101,7 @@ line vty 0 4
  login local
  transport input ssh
 ```
-imagenes 07 y 08
-                    <img src="images/07-config-ACL-management-r1.png " alt=" 07-config-ACL-management-r1" width="50%"> <img src="images/08-config-ACL-en r1-pc it.png " alt=" 08-config-ACL-en r1-pc it" width="50%"> 
+<img src="images/07-config-ACL-management-r1.png " alt=" 07-config-ACL-management-r1" width="50%"> <img src="images/08-config-ACL-en r1-pc it.png " alt=" 08-config-ACL-en r1-pc it" width="50%"> 
 
 
 A diferencia de una ACL aplicada sobre una interfaz mediante `ip access-group`, `access-class` controla específicamente el acceso hacia las líneas administrativas del propio dispositivo.
@@ -116,7 +114,6 @@ La sentencia:
 
 permite que además se registren los intentos de acceso provenientes de direcciones no autorizadas, preparando estos eventos para su futura centralización mediante Syslog.
 
-imagen 09
 <img src="images/09-deny-any-log.png " alt=" 09-deny-any-log" width="70%">
 ---
 
@@ -170,8 +167,7 @@ La autenticación fue completada correctamente mediante el usuario local configu
 
 La sesión permitió acceder al dispositivo con privilegios administrativos.
 
-conexion ssh (06)
-<img src="images/06-conexion ssh it-r1.png " alt=" 06-conexion ssh it-r1" width="70%">
+<img src="images/06-conexion-ssh-it -r1.png " alt=" 06-conexion-ssh-it -r1" width="70%">
 
 También se verificó el acceso hacia los switches mediante sus direcciones pertenecientes a la VLAN 99.
 
