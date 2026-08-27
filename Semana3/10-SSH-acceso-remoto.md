@@ -4,7 +4,7 @@ Se implementó un mecanismo de **administración remota segura** para los dispos
 
 🎯 El objetivo fue reemplazar métodos de acceso remoto inseguros por SSHv2 y limitar las conexiones administrativas únicamente a una estación autorizada del equipo de IT.
 
-<img src="images/06-conexion-ssh-it-r1.png" alt="06-conexion-ssh-it-r1" width="50%"> 
+<img src="images/06-conexion-ssh-it -r1.png" alt="06-conexion-ssh-it -r1" width="60%"> 
 
 ---
 
@@ -79,7 +79,7 @@ Esto limita el tiempo disponible para completar la autenticación y cierra sesio
 
 ---
 
-## Restricción del acceso administrativo
+## 🚫 Restricción del acceso administrativo
 
 La implementación de SSH por sí sola protege la confidencialidad de la sesión, pero no determina qué equipos están autorizados a intentar conectarse.
 
@@ -101,7 +101,7 @@ line vty 0 4
  login local
  transport input ssh
 ```
-<img src="images/07-config-ACL-management-r1.png " alt=" 07-config-ACL-management-r1" width="50%"> <img src="images/08-config-ACL-en r1-pc it.png " alt=" 08-config-ACL-en r1-pc it" width="50%"> 
+<img src="images/08-config-ACL-en r1-pc it .png" alt="08-config-ACL-en r1-pc it" width="45%"> <img src="images/07-config-ACL-management-r1.png " alt=" 07-config-ACL-management-r1" width="50%">
 
 
 A diferencia de una ACL aplicada sobre una interfaz mediante `ip access-group`, `access-class` controla específicamente el acceso hacia las líneas administrativas del propio dispositivo.
@@ -115,8 +115,8 @@ La sentencia:
 permite que además se registren los intentos de acceso provenientes de direcciones no autorizadas, preparando estos eventos para su futura centralización mediante Syslog.
 
 <img src="images/09-deny-any-log.png " alt=" 09-deny-any-log" width="70%">
----
 
+---
 ## Administración mediante VLAN 99
 
 Los switches del laboratorio utilizan la VLAN 99 como red destinada a Management.
@@ -159,7 +159,7 @@ La misma política de SSH y la ACL `SSH-MANAGEMENT` fueron aplicadas sobre los s
 
 ---
 
-## Validación del acceso autorizado
+## ✅ Validación del acceso autorizado
 
 Desde `IT-Admin` se realizó una conexión SSH hacia `R1-EDGE`.
 
@@ -173,12 +173,11 @@ También se verificó el acceso hacia los switches mediante sus direcciones pert
 
 ---
 
-## Validación de acceso no autorizado
+## 🚫 Validación de acceso no autorizado
 
-Para comprobar el funcionamiento de `SSH-MANAGEMENT`, se realizó un segundo intento desde un host perteneciente a la VLAN 10 - Administración.
+Para comprobar el funcionamiento de `SSH-MANAGEMENT`, se envía un ping desde un host perteneciente a la VLAN 10 - Administración.
 
-conexion ssh (10)
-<img src="images/10-conexion-ssh- admin-r1.png " alt=" 10-conexion-ssh- admin-r1" width="60%">
+<img src="images/10-conexion-ssh- admin-r1.png " alt=" 10-conexion-ssh- admin-r1" width="50%">
 
 El host conservaba conectividad IP con el router:
 
@@ -193,7 +192,6 @@ Host VLAN 10 → SSH R1-EDGE ❌
 
 Esto demuestra que la conectividad entre redes continúa funcionando, mientras que el acceso al plano de administración permanece restringido.
 
-gif 11
 <img src="images/11-match-en-acl.gif " alt=" 11-match-en-acl" width="60%">
 
 Posteriormente, el comando:
@@ -232,14 +230,14 @@ Esta configuración se utilizó únicamente para mantener compatibilidad con la 
 
 La implementación permitió establecer un esquema de administración remota controlado para la infraestructura del laboratorio.
 
-✅ SSHv2 habilitado para la administración remota.
-✅ Claves RSA de 2048 bits configuradas.
-✅ Autenticación mediante usuario local protegido con `secret`.
-✅ Telnet deshabilitado en las líneas VTY.
-✅ Estación `IT-Admin` dedicada para tareas administrativas.
-✅ Acceso SSH restringido exclusivamente a `192.168.20.155`.
-✅ Intentos provenientes de hosts no autorizados bloqueados mediante ACL.
-✅ Logging habilitado para intentos de acceso no autorizados.
+* ✅ SSHv2 habilitado para la administración remota.
+* ✅ Claves RSA de 2048 bits configuradas.
+* ✅ Autenticación mediante usuario local protegido con `secret`.
+* ✅ Telnet deshabilitado en las líneas VTY.
+* ✅ Estación `IT-Admin` dedicada para tareas administrativas.
+* ✅ Acceso SSH restringido exclusivamente a `192.168.20.155`.
+* ✅ Intentos provenientes de hosts no autorizados bloqueados mediante ACL.
+* ✅ Logging habilitado para intentos de acceso no autorizados.
 
 ## ⏩Próximos pasos 
 
