@@ -1,4 +1,4 @@
-# 11 - Hardening
+# Hardening
 
 Se aplicaron medidas de hardening sobre los routers, switches y puertos de acceso.
 
@@ -10,7 +10,7 @@ Se aplicaron medidas de hardening sobre los routers, switches y puertos de acces
 
 Se definió un baseline de seguridad para los dispositivos de infraestructura.
 
-Entre las principales medidas implementadas se encuentran:
+📋 Entre las principales medidas implementadas se encuentran:
 
 * Protección del acceso al modo privilegiado.
 * Cifrado de contraseñas almacenadas en la configuración.
@@ -206,7 +206,7 @@ Posteriormente se desconectó temporalmente el dispositivo y se conectó un segu
 0242.2ca2.8900
 ```
 
-<img src="images/15-host-no-autorizado.png " alt=" 15-host-no-autorizado" width="60%">
+<img src="images/15-host-no-autorizado.png " alt=" 15-host-no-autorizado" width="35%">
 
 Al generar tráfico desde el nuevo dispositivo, Port Security detectó la violación.
 
@@ -233,7 +233,7 @@ IOS también generó el siguiente evento:
 Security violation occurred, caused by MAC address
 0242.2ca2.8900 on port GigabitEthernet0/1.
 ```
-img 17
+
 <img src="images/17-psecure-violation.png " alt=" 17-psecure-violation" width="70%"> 
 
 La tabla de direcciones seguras continuó conservando únicamente la MAC legítima:
