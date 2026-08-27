@@ -35,18 +35,6 @@ Excepción de la política: acceso al servidor DNS
 
 Se creó una ACL extendida nombrada en `R1-EDGE`.
 
-```cisco
-ip access-list extended GUEST-IN
- 10 permit udp any eq bootpc any eq bootps
- 20 permit udp 192.168.30.0 0.0.0.255 host 192.168.50.10 eq domain
- 30 permit tcp 192.168.30.0 0.0.0.255 host 192.168.50.10 eq domain
- 40 deny ip 192.168.30.0 0.0.0.255 192.168.10.0 0.0.0.255
- 50 deny ip 192.168.30.0 0.0.0.255 192.168.20.0 0.0.0.255
- 60 deny ip 192.168.30.0 0.0.0.255 192.168.50.0 0.0.0.255
- 70 deny ip 192.168.30.0 0.0.0.255 192.168.99.0 0.0.0.255
- 80 permit ip 192.168.30.0 0.0.0.255 any
-```
-
 Las ACE fueron numeradas utilizando intervalos de diez para facilitar futuras modificaciones y permitir la incorporación de nuevas reglas, la ACL fue aplicada en dirección de entrada sobre la subinterfaz correspondiente a la VLAN Guest:
 
 ```cisco
