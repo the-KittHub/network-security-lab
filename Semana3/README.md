@@ -21,7 +21,7 @@ El objetivo fue comenzar a **aplicar políticas de seguridad** sobre la red ya s
 
 ---
 
-## Tecnologías utilizadas
+## 🛠️ Tecnologías utilizadas
 
 * Cisco IOS
 * GNS3
