@@ -113,4 +113,4 @@ Como resultado:
 
 ## ⏩Próximos pasos 
 
-En la siguiente etapa se implementará SSH. [Ir a la siguiente sección](10-ssh-acceso-remoto.md)
+En la siguiente etapa se implementará SSH. [Ir a la siguiente sección](10-SSH-acceso-remoto.md)
