@@ -1,4 +1,4 @@
-# 09 - ACLs y Segmentación segura
+# ACLs y Segmentación segura
 
 En esta etapa se implementaron políticas de control de acceso destinadas a limitar la comunicación entre segmentos de la red y proteger el acceso administrativo a los dispositivos de infraestructura.
 
@@ -94,9 +94,9 @@ Aunque el acceso general hacia VLAN 50 fue bloqueado, se permitió específicame
 
 Desde PC-Guest se logró resolver:
 
-serv1-infra.kit.enterprise.lab → 192.168.50.10
+`serv1-infra.kit.enterprise.lab → 192.168.50.10`
 
-pero el posterior tráfico ICMP hacia el servidor fue rechazado.
+pero el resto del tráfico ICMP hacia el servidor fue rechazado.
 
 De esta forma, Guest puede utilizar el servicio necesario sin obtener acceso general a la red de servidores.
 
